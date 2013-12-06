@@ -1,0 +1,15 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross
+
+NAME="mingw64-x86_64-libdvbpsi"
+VERSION=0.2.2
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="MPEG TS/DVB PSI table decoding library for Win64 toolchain"
+DESCRIPTION="libdvbpsi is a simple library designed for decoding and
+generation of MPEG TS and DVB PSI tables."
+HOMEPAGE="http://www.videolan.org/developers/libdvbpsi.html"
+SRC_URI="http://download.videolan.org/pub/libdvbpsi/${VERSION}/libdvbpsi-${VERSION}.tar.bz2"
+SRC_DIR="libdvbpsi-${VERSION}"
+
+CYGCONF_ARGS="--enable-release"
